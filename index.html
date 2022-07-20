@@ -53,7 +53,6 @@
       </ul>
 
      </div>
-
         </header>
 
     <main>
@@ -65,56 +64,55 @@
           Заказать услугу</button>
 
         <div class="backdrop is-hidden" data-modal>
- 
-          <div class="modal">
+
+           <div class="modal">
+
             <button class="button-modal" type="button" data-modal-close>
-              <svg class="close-svg" width="11px" height="11px">
+              <svg class="button-modal__close-svg" width="11px" height="11px">
               <use href="./images/icons.svg#close-button"></use></svg></button>
           
-
-
             <h2 class="header-modal">Оставьте свои данные, мы вам перезвоним</h2>
           
             <form class="forms">
 
             <div class="form-modal">
-            <label for="name" class="label-modal">Имя</label>
-            <div class="input-svg">
-            <input type="text" class="input-form" name="name" id="name" />
-            <svg class="modal-svg" width="18px" height="18px">
-              <use href="./images/icons.svg#modal-person"></use>
-            </svg>
-          </div>
-          </div>
+               <label for="name" class="form-modal__label">Имя</label>
+                 <div class="form-modal__input-svg">
+                 <input type="text" class="form-modal__input-form" name="name" id="name" />
+                 <svg class="form-modal__modal-svg" width="18px" height="18px">
+                 <use href="./images/icons.svg#modal-person"></use>
+                 </svg>
+                 </div>
+            </div>
           
           
             <div class="form-modal">
-            <label for="tel" class="label-modal">Телефон</label>
-            <div class="input-svg">
-            <input type="tel" class="input-form" name="tel" id="tel" />
-            <svg class="modal-svg" width="18px" height="18px">
-              <use href="./images/icons.svg#modal-phone"></use>
-            </svg>
-          </div>
-          </div>
+               <label for="tel" class="form-modal__label">Телефон</label>
+                 <div class="form-modal__input-svg">
+                 <input type="tel" class="form-modal__input-form" name="tel" id="tel" />
+                 <svg class="form-modal__modal-svg" width="18px" height="18px">
+                 <use href="./images/icons.svg#modal-phone"></use>
+                 </svg>
+                 </div>
+            </div>
          
           
             <div class="form-modal">
-            <label for="email" class="label-modal">Почта</label>
-            <div class="input-svg">
-            <input type="email" class="input-form" name="email" id="email" />
-            <svg class="modal-svg" width="18px" height="18px">
-              <use href="./images/icons.svg#modal-email"></use>
-            </svg>
-          </div>
-          </div>
+               <label for="email" class="form-modal__label">Почта</label>
+                 <div class="form-modal__input-svg">
+                 <input type="email" class="form-modal__input-form" name="email" id="email" />
+                 <svg class="form-modal__modal-svg" width="18px" height="18px">
+                 <use href="./images/icons.svg#modal-email"></use>
+                 </svg>
+                 </div>
+            </div>
           
           
-            <div class="form-modal comments">
-            <label for="comments" class="label-modal">Комментарий</label>
-            <textarea class="comment-text" name="comments" id="comments" rows="10" 
-            placeholder="Введите текст"></textarea>
-          </div>
+            <div class="form-modal-comments">
+              <label for="comments" class="form-modal-comments__label">Комментарий</label>
+              <textarea class="form-modal-comments__text" name="comments" id="comments" rows="10" 
+              placeholder="Введите текст"></textarea>
+            </div>
 
 
 
@@ -142,6 +140,9 @@
 
       </div>
       </section>
+
+
+
       <!--Секция 2-->
       <section class="features">
         <div class="conteiner">
