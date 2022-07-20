@@ -64,15 +64,16 @@
           Заказать услугу</button>
 
         <div class="backdrop is-hidden" data-modal>
-
            <div class="modal">
 
             <button class="button-modal" type="button" data-modal-close>
               <svg class="button-modal__close-svg" width="11px" height="11px">
               <use href="./images/icons.svg#close-button"></use></svg></button>
           
-            <h2 class="header-modal">Оставьте свои данные, мы вам перезвоним</h2>
-          
+            <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <!--Формы-->
+
             <form class="forms">
 
             <div class="form-modal">
@@ -85,7 +86,6 @@
                  </div>
             </div>
           
-          
             <div class="form-modal">
                <label for="tel" class="form-modal__label">Телефон</label>
                  <div class="form-modal__input-svg">
@@ -96,7 +96,6 @@
                  </div>
             </div>
          
-          
             <div class="form-modal">
                <label for="email" class="form-modal__label">Почта</label>
                  <div class="form-modal__input-svg">
@@ -107,72 +106,63 @@
                  </div>
             </div>
           
-          
             <div class="form-modal-comments">
               <label for="comments" class="form-modal-comments__label">Комментарий</label>
               <textarea class="form-modal-comments__text" name="comments" id="comments" rows="10" 
               placeholder="Введите текст"></textarea>
             </div>
 
-
-
-          <div class="form-modal terms">
-            
-            <label class="terms-checkbox" for="terms">
-              
-              <input class="checkbox-form" type="checkbox" 
-              name="checkbox" value="terms" id="terms"/>
-              <span class="icon-checkbox"></span>
-              Соглашаюсь с рассылкой и принимаю <a class="contract"> 
-                Условия договора</a>           
+          <div class="form-modal-terms">
+            <label class="form-modal-terms__label" for="terms">
+              <input class="form-modal-terms__checkbox" type="checkbox" name="checkbox" value="terms" id="terms"/>
+              <span class="form-modal-terms__icon"></span>Соглашаюсь с рассылкой и принимаю 
+              <a class="form-modal-terms__contract"> Условия договора</a>           
             </label>
           </div>
           
           <button class="button-primary " type="submit">Отправить</button>
 
           </form>
-
              </div>
-
-
-
         </div>
-
       </div>
       </section>
 
-
-
       <!--Секция 2-->
       <section class="features">
-        <div class="conteiner">
-        <ul class="features-list list">
-          <li class="features-link">
-            <svg class="features-icon first" width="70px" height="70px">
+        <div class="conteiner conteiner--style">
+        <ul class="features-list">
+
+          <li class="features-list__item">
+            <svg class="features-list__icon" width="70px" height="70px">
               <use href="./images/icons.svg#icon-img2-1"></use></svg>
-            <h3 class="third-title">Внимание к деталям</h3>
-            <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <h3 class="features-list__third-title">Внимание к деталям</h3>
+            <p class="features-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-            <li>
-            <svg class="features-icon second" width="70px" height="70px">
+
+            <li class="features-list__item">
+            <svg class="features-list__icon" width="70px" height="70px">
               <use href="./images/icons.svg#icon-img2-2"></use></svg>
-            <h3 class="third-title">Пунктуальность</h3>
-            <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+            <h3 class="features-list__third-title">Пунктуальность</h3>
+            <p class="features-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li>
-            <svg class="features-icon third" width="70px" height="70px">
+
+          <li class="features-list__item">
+            <svg class="features-list__icon" width="70px" height="70px">
               <use href="./images/icons.svg#icon-img2-3"></use></svg>
-            <h3 class="third-title">Планирование</h3>
-            <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.
+            <h3 class="features-list__third-title">Планирование</h3>
+            <p class="features-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li>
-            <svg class="features-icon forth" width="70px" height="70px">
+
+          <li class="features-list__item">
+            <svg class="features-list__icon" width="70px" height="70px">
               <use href="./images/icons.svg#icon-img2-4"></use></svg>
-            <h3 class="third-title">Современные технологии</h3>
-            <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <h3 class="features-list__third-title">Современные технологии</h3>
+            <p class="features-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
+
         </ul>
       </div>
       </section>
@@ -180,13 +170,33 @@
       <section class="works">
         <div class="conteiner">
         <h2 class="second-title">Чем мы занимаемся</h2>
-        <ul class="works-list list">
-          <li class="works-card"><img src="./images/img.jpg/img3.1.jpg" width="370" height="294" alt="клавиатура"/>
-            <div class="card-work"><h3 class="third-title">Десктопные приложения</h3></div></li>
-          <li class="works-card"><img src="./images/img.jpg/img3.2.jpg" width="370" height="294" alt="ноутбук" />
-            <div class="card-work"><h3 class="third-title">Мобильные приложения</h3></div></li>
-          <li class="works-card"><img src="./images/img.jpg/img3.3.jpg" width="370" height="294" alt="планшет" />
-            <div class="card-work"><h3 class="third-title">Дизайнерские решения</h3></div></li>
+
+        <ul class="works__list">
+
+          <li class="works__item">
+            <img class="works__img" src="./images/img.jpg/img3.1.jpg" 
+            width="370" height="294" alt="клавиатура"/>
+            <div class="works__card">
+              <h3 class="works__third-title">Десктопные приложения</h3>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <img  class="works__img" src="./images/img.jpg/img3.2.jpg" 
+            width="370" height="294" alt="ноутбук" />
+            <div class="works__card">
+              <h3 class="works__third-title">Мобильные приложения</h3>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <img class="works__img" src="./images/img.jpg/img3.3.jpg" 
+            width="370" height="294" alt="планшет" />
+            <div class="works__card">
+              <h3 class="works__third-title">Дизайнерские решения</h3>
+            </div>
+          </li>
+
         </ul>
       </div>
       </section>
@@ -194,10 +204,13 @@
       <section class="team">
         <div class="conteiner">
         <h2 class="second-title">Наша команда</h2>
+
         <ul class="team-list list">
           <li class="team-card-list">
-            <img src="./images/img.jpg/img4.1.jpg" width="270" height="260" alt="наша команда" />
-          <div class="team-card"><h3 class="third-title">Игорь Демьяненко</h3>
+            <img src="./images/img.jpg/img4.1.jpg" 
+            width="270" height="260" alt="наша команда" />
+          <div class="team-card">
+            <h3 class="third-title">Игорь Демьяненко</h3>
             <p class="text">Product Designer</p>
 
           <ul class="team-list-second list">
