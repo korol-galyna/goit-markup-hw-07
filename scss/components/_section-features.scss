@@ -15,16 +15,12 @@
 
 .features-list__item {
     width: 270px;
-}
 
-.features-list__item:not(:last-child) {
+
+    &:not(:last-child) {
     margin-right: 30px;
     }
 
-.third-title--features-section {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 .features-list__text {
